@@ -7,23 +7,20 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-100: oklch(93.6% 0.032 17.717);
-    --color-red-200: oklch(88.5% 0.062 18.334);
     --color-red-300: oklch(80.8% 0.114 19.571);
-    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-yellow-200: oklch(94.5% 0.129 101.54);
+    --color-yellow-800: oklch(47.6% 0.114 61.907);
     --color-green-200: oklch(92.5% 0.084 155.995);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-pink-200: oklch(89.9% 0.061 343.231);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
@@ -219,12 +216,6 @@
   .mt-\[2px\] {
     margin-top: 2px;
   }
-  .mt-\[50px\] {
-    margin-top: 50px;
-  }
-  .mt-\[80px\] {
-    margin-top: 80px;
-  }
   .mt-\[100px\] {
     margin-top: 100px;
   }
@@ -258,17 +249,11 @@
   .h-lvh {
     height: 100lvh;
   }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
-  }
-  .w-200 {
-    width: calc(var(--spacing) * 200);
-  }
   .w-\[50px\] {
     width: 50px;
   }
-  .w-\[50vw\] {
-    width: 50vw;
+  .w-\[80vw\] {
+    width: 80vw;
   }
   .w-\[96\%\] {
     width: 96%;
@@ -340,14 +325,14 @@
   .bg-red-300 {
     background-color: var(--color-red-300);
   }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-yellow-800 {
+    background-color: var(--color-yellow-800);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -389,9 +374,6 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -423,6 +405,20 @@
     --tw-duration: 1000ms;
     transition-duration: 1000ms;
   }
+  .hover\:bg-gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-200);
+      }
+    }
+  }
+  .hover\:bg-gray-300 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-300);
+      }
+    }
+  }
   .max-\[700px\]\:hidden {
     @media (width < 700px) {
       display: none;
@@ -441,11 +437,6 @@
   .max-\[700px\]\:justify-between {
     @media (width < 700px) {
       justify-content: space-between;
-    }
-  }
-  .min-\[700px\]\:mr-\[50px\] {
-    @media (width >= 700px) {
-      margin-right: 50px;
     }
   }
   .min-\[700px\]\:hidden {

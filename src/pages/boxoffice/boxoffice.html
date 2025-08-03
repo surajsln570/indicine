@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Office</title>
+    <link href="../../output.css" rel="stylesheet">
+     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+     <script src="https://kit.fontawesome.com/489ed53e16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+            <nav onclick="" class="top-0 fixed max-[700px]:h-[100px] w-[100%] align-middle  bg-black flex max-[700px]:justify-between shadow-[0_2px_20px_black] mr-0">
+            <div class="">
+                <a class="flex" href="/index.html">
+                    <img class="h-[50px] w-[50px] bg-red-500 rounded-[50%] mx-5 my-auto" src="/img/image.png" alt="">
+                    <p class="ml-0 text-white my-auto max-[700px]:hidden ">Indicine</p>
+                </a>
+            </div>
+            <ul class="flex max-[700px]:hidden mx-auto  p-2 ">
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/index.html">Home</a> </li>
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/src/pages/cinema/cinema.html"> Cinema News</a></li>
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/src/pages/release/release.html"> Release Dates</a></li>
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/src/pages/boxoffice/boxoffice.html"> Box Office</a></li>
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/src/pages/about/about.html">Contact Us</a> </li>
+            </ul>
+            <div onclick="handleMenu()" id="i" class="my-auto min-[700px]:hidden">
+                <i class=" fa-solid fa-bars text-white my-auto text-4xl mx-5 cursor-pointer"></i>
+            </div>
+            <div id="menu"  class="hidden h-lvh w-[80vw] fixed bg-red-300 transition duration-1000 ">
+                <ul class="flex flex-col justify-center align-middle  p-2 ">
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/index.html">Home</a> </li>
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/src/pages/cinema/cinema.html"> Cinema News</a></li>
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/src/pages/release/release.html"> Release Dates</a></li>
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/src/pages/boxoffice/boxoffice.html">Box Office</a> </li>
+                <li class="hover:bg-gray-300 mx-4 my-3 font-bold text-xl bg-white rounded-sm shadow-[7px_7px_5px_blue]"><a href="/src/pages/about/about.html">Contact Us</a> </li>
+            </ul>
+            </div>          
+        </nav>
+    <h1 class="mt-[100px] text-4xl">This is contact boxoffice page</h1>
+    <script src="../../../script.js"></script>
+</body>
+</html>
